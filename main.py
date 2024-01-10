@@ -1,19 +1,9 @@
-# This is a sample Python script.
+names = ["Jimmethy", "James", "John"]
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+for each in names:
+    print(each)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-print("test")
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# the reason you have to use "range" instead of just "len" is because a for loop
+# only accepts lists, and "len" outputs an "int," not list!
+for each in range(len(names)):
+    print(names[each])
